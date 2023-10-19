@@ -80,8 +80,8 @@ startGPSSbtn = ttk.Button(GPSStab, text='Start GPSS Simulation', command=startGP
 startGPSSbtn.grid(row=2, column=1, padx=5, pady=5)
 
 helpTab.rowconfigure(0, weight=1, minsize=50)
-GPSStab.columnconfigure(0, weight=1, minsize=50)
-infoTextbox = tk.Text(helpTab, height=100, width=105)
+helpTab.columnconfigure(0, weight=1, minsize=50)
+infoTextbox = tk.Text(helpTab, height=100, width=100)
 infoTextbox.grid(row=0, column=0, padx=5, pady=5, sticky='nw')
 infoTextbox.insert(tk.END, showHelp())
 infoTextbox.config(state=tk.DISABLED)
